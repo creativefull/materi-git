@@ -1,0 +1,104 @@
+@import url(roboto.css);
+@import url(button.css);
+@import url(basic.css);
+@import url(box-init.css);
+@import url(box-code.css);
+@import url(box-change.css);
+
+body.body {
+    margin : 0px;
+    opacity: 0;
+    transform: scale(0);
+    overflow: hidden;
+}
+body.show {
+    transform: scale(1);
+    opacity: 1;
+    transition: opacity .8s ease-in,
+            transform .8s cubic-bezier(1,-0.13, 0.07, 1.08);
+}
+.box-control {
+    position: fixed;
+    z-index: 9999;
+}
+.list {
+    font-family: RobotoLight;
+    margin: 0px;
+    font-size: 1em;
+}
+.watermark {
+    position: fixed;
+    z-index: 9999;
+    top: 5;
+    right: 20;
+    font-size: .8em;
+    font-family: RobotoLight;
+    color: #FFF;
+}
+.box-welcome {
+    width: 100%;
+    height: 100vh;
+    line-height: 7em;
+    background: #CA2C68;
+    color: #FFF;
+}
+.box-welcome h1 {
+    font-family: 'RobotoBold';
+    font-size:5em;
+    margin: 0px;
+}
+.box-welcome h2 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    font-family: 'RobotoThin'
+}
+.box-welcome .box-card {
+    width: 500px;
+    height: auto;
+    padding: 10em;
+    margin: 0px auto;
+    text-align: center
+}
+
+.box-intro {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: #AA0C48;
+    color: #FFF;
+    border-radius: 100%;
+    transform: translate3d(-100%,0,0) scale(0);
+    transition: transform .5s ease;
+}
+.box-intro h1 {
+    font-family: 'RobotoBold';
+    font-size:3.5em;
+    margin: 0px;
+}
+.box-intro h4 {
+    margin-top: 0px;
+    font-size: 1.5em;
+    font-family: 'RobotoThin'
+}
+.box-intro .left {
+    float: left;
+    padding: 10em;
+    width: 400px;
+    opacity: 0;
+    transition: opacity 1s cubic-bezier(0.93, 0.74, 0.08, 1.58);
+}
+.box-intro .right {
+    float: left;
+    width: 400px;
+}
+.box-intro.active {
+    border-radius: 0px;
+    height: 100%;
+    background-color: #2C3E50;
+    transform: translate3d(0,-100%,0) scale(1);
+    transition: background-color 2.5s ease, transform 1s cubic-bezier(0.93, 0.74, 0.08, 1.58), border-radius 1.5s cubic-bezier(0.93, 0.74, 0.08, 1.58);
+}
+.box-intro.active .left {
+    transition-delay: 1.5s;
+    opacity: 1;
+}

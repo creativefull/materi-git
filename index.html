@@ -1,0 +1,236 @@
+<html>
+    <head>
+        <title>The Power Of Git</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body class="body" data-slide="0">
+        <div class="box-control">
+            <button class="btn btn-prev btn-border-default" onclick="prev()">PREV</button>
+            <button class="btn btn-next btn-border-default" onclick="next()">NEXT</button>
+        </div>
+        <!--SPONSOR-->
+        <h4 class="watermark">
+            KOMUNITAS PROGRAMMER KUDUS
+        </h4>
+        <!--Welcome-->
+        <div class="box-welcome box" data-id="0">
+            <div class="box-card">
+                <h1>THE POWER OF GIT</h1>
+                <h2>By Shodiqul Muzaki</h2>
+            </div>
+        </div>
+
+        <!--INTRO-->
+        <div class="box-intro box" data-id="1">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Apa itu Git ?</h1>
+                    <h4>Git adalah sebuah tool untuk kolaborasi code kita dalam bekerja team</h4>
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <img src="img/hero.svg" width="700"/>
+                </div>
+            </div>
+        </div>
+        
+        <!--BASIC-->
+        <div class="box-basic box" data-id="2">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Mengapa Harus Pakai Git ?</h1>
+                    <h4>Untuk mempermudah seorang programmer dalam berbagi code dalam satu team. dan juga untuk mengontrol versi source code yang sedang di kerjakan</h4>
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        GIT
+                        AWESOME
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--INIT-->
+        <div class="box-init box" data-id="3">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Basic Command</h1>
+                    <h4>Perintah - Perintah dasar untuk menggunakan git</h4>
+                    <p>
+                        <ul class="list">
+                            <li>
+                                Git Init
+                                <br/>
+                                <small>Inisialisasi project</small>
+                            </li>
+                            <li>
+                                Git Clone
+                                <br/>
+                                <small>Ambil project dari respository</small>
+                            </li>
+                            <li>
+                                Git Remote
+                                <br/>
+                                <small>Buat remote git ke server</small>
+                            </li>
+                            <li>
+                                Git add
+                                <br/>
+                                <small>Menambah File untuk di upload</small>
+                            </li>
+                            <li>
+                                Git commit
+                                <br/>
+                                <small>Komentar / Deskripsi perubahan kode</small>
+                            </li>
+                            <li>
+                                Git pull
+                                <br/>
+                                <small>Ambil perubahan source code dari server</small>
+                            </li>
+                            <li>
+                                Git push
+                                <br/>
+                                <small>Upload perubahan kode ke server</small>
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        LET'S
+                        <br/>
+                        DO IT
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--CODE-->
+        <div class="box-code box" data-id="4">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Git Clone</h1>
+                    <h4>git clone {url_repository}</h4>
+
+                    <h1>Git Remote</h1>
+                    <h4>git remote add origin {url_repository}</h4>
+
+                    <h1>Git Pull</h1>
+                    <h4>git pull origin {branch}</h4>                    
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        GET
+                        CODE NOW
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--CHANGE-->
+        <div class="box-change box" data-id="5">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Git Add</h1>
+                    <h4>git add {file_name} -> Per File</h4>
+                    <h4>git add -A -> All Files</h4>
+
+                    <h1>Git Commit</h1>
+                    <h4>git commit -m {your comment} -a</h4>
+
+                    <h1>Git Push</h1>
+                    <h4>git push -u origin {branch}</h4>                    
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        CHANGE THE WORLD
+                    </h1>
+                </div>
+            </div>
+        </div>
+        
+        <!--CHANGE-->
+        <div class="box-basic box" data-id="6">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Ignore File</h1>
+                    <h4>Abaikan file file dinamis seperti asset upload, node_module, bower</h4>
+                    <h4>Buat file .gitignore</h4>
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        NO DINAMIC FILE
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <!--CHANGE-->
+        <div class="box-change box" data-id="7">
+            <div class="box-card">
+                <div class="left">
+                    <h1>Git Brach</h1>
+                    <h4>git branch nama_branch</h4>
+                    <h4>git checkout -b nama_branch</h4>
+
+                    <h1>Delete Branch</h1>
+                    <h4>git branch -D nama_branch</h4>
+
+                    <h1>Merge Branch</h1>
+                    <h4>git merge nama_branch</h4>
+                </div>
+                <div class="right">
+                    <br/>
+                    <br/>
+                    <h1 class="large">
+                        BRANCH
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <script src="jquery.min.js"></script>
+        <script>
+            $(function() {
+                setTimeout(function() {
+                    $("body.body").addClass("show")
+                }, 100);
+            })
+
+            $("#btn-mulai").click(function() {
+                $(".body").attr("data-slide", 1);
+                $(".box-intro").addClass("active")
+            })
+
+            function prev() {
+                var slide = $(".body").attr("data-slide");
+                $(".box[data-id='" + slide + "']").removeClass("active");
+                slide = slide-1;
+                $(".body").attr("data-slide", slide);
+            }
+
+            function next() {
+                var slide = parseInt($(".body").attr("data-slide"));
+                slide = slide+1;
+                $(".body").attr("data-slide", slide);
+                $(".box[data-id='" + slide + "']").addClass("active");
+            }
+        </script>
+    </body>
+</html>

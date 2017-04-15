@@ -1,0 +1,33 @@
+button.btn {
+    padding: .5em 2em;
+    border: none;
+    font-family: 'RobotoLight';
+    cursor: pointer;
+    background: transparent
+}
+.btn.btn-primary {
+    background-color: #2C3E50;
+    color: #FFF;
+}
+.btn-lg {
+    font-size: 1.5em;
+}
+.btn-border-default {
+    border: 1px solid#FFF !important;
+    color: #FFF
+}
+.btn-border-default:hover {
+    background-color: #FFF;
+    transition: background-color .2s ease-in-out;
+    color: #333;
+}
+.btn-next {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+.btn-prev {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+}
